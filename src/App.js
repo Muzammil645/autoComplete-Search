@@ -1,23 +1,87 @@
-import logo from './logo.svg';
 import './App.css';
+import AutoComplete from './Components/AutoComplete';
 
-function App() {
+const App = () => {
+ 
+  const cityNames =[
+    "Abbottabad" ,
+    "AhmadpurEast" ,
+    "Bahawalnagar" ,
+    "Bahawalpur" ,
+    "Burewala" ,
+    "Chakdara" ,
+    "Chakwa" ,
+    "Chaman" ,
+    "Chiniot" ,
+    "Chishtian" ,
+    "Dadu" ,
+    "Daska" ,
+    "Dera Ghazi Khan" ,
+    "Dera Ismail Khan" ,
+    "Faisalabad" ,
+    "Gojra" ,
+    "Gujranwala" ,
+    "Gujrat" ,
+    "Hafizabad" ,
+    "Hyderabad" ,
+    "Islamabad" ,
+    "Jacobabad" ,
+    "Jaranwala" ,
+    "Jhang" ,
+    "Jhelum" ,
+    "Kamalia" ,
+    "Kamoke" ,
+    "Kandhkot" ,
+    "Karachi" ,
+    "Kasur" ,
+    "Khairpur" ,
+    "Khanewa" ,
+    "Khanpur" ,
+    "Khushab" ,
+    "Khuzdar" ,
+    "Kohat" ,
+    "Kot Adu" ,
+    "Lahore" ,
+    "Larkana" ,
+    "Mandi Bahauddin" ,
+    "Mardan" ,
+    "Mingora" ,
+    "Mirpur Khas" ,
+    "Multan" ,
+    "Muridke" ,
+    "Muzaffargarh" ,
+    "Nawabshah" ,
+    "Nowshera" ,
+    "kara" ,
+    "Pakpattan" ,
+    "Peshawar" ,
+    "Quetta" ,
+    "Rahim Yar Khan" ,
+    "Rawalpindi" ,
+    "Rawalpini" ,
+    "Sadiqabad" ,
+    "Sahiwal" ,
+    "Sargodha" ,
+    "Shekhupura" ,
+    "Shikarpur" ,
+    "Sialkot" ,
+    "Sukkur" ,
+    "Swabi" ,
+    "Tando Allahyar" ,
+    "Taxila" ,
+    "Timergara" ,
+    "Toba Tek Singh" ,
+    "Vehari" ,
+    "Wah Cantonment" ,
+    "Wazirabad",
+
+  ];
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+     
+     <AutoComplete options={cityNames} />
+
     </div>
   );
 }
